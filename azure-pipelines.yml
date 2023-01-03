@@ -3,7 +3,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- master
+- testing
 
 resources:
 - repo: self
@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '6603efaa-751f-45e0-af14-6828ac453a5a'
   imageRepository: 'bagepalliaravindreddydotnetpoc'
   containerRegistry: 'myfirstcontainerregistry7.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/DependentService-1/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
